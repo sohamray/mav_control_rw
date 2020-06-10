@@ -1,0 +1,3 @@
+/home/charris/simulator_ws/src/rotors_simulator/rotors_mpc/mav_nonlinear_mpc/solver_made_from_cpp/build/CMakeFiles/edit_cache.dir
+/home/charris/simulator_ws/src/rotors_simulator/rotors_mpc/mav_nonlinear_mpc/solver_made_from_cpp/build/CMakeFiles/rebuild_cache.dir
+/home/charris/simulator_ws/src/rotors_simulator/rotors_mpc/mav_nonlinear_mpc/solver_made_from_cpp/build/CMakeFiles/../solver/nmpc_solver_setup.dir

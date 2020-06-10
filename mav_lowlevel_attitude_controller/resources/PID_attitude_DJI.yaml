@@ -1,0 +1,29 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      id: 0
+      name: Default
+      p_gain: 29.985
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      pitch_gain: 77.961
+      pitch_int_gain: 13.992999999999999
+      q_gain: 29.985
+      r_gain: 1.0
+      roll_gain: 77.961
+      roll_int_gain: 13.992999999999999
+      state: true
+      type: ''
+    state: []
+  p_gain: 29.985
+  pitch_gain: 77.961
+  pitch_int_gain: 13.992999999999999
+  q_gain: 29.985
+  r_gain: 1.0
+  roll_gain: 77.961
+  roll_int_gain: 13.992999999999999
+state: []

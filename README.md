@@ -1,5 +1,47 @@
-mav_control_rw [![Build Status](https://travis-ci.org/ethz-asl/mav_control_rw.svg?branch=master)](https://travis-ci.org/ethz-asl/mav_control_rw)
+# RotorS MPC Controller
 ======
+
+All credits for the control structure and development are given to ETH ASL.  The original repository can be found:  https://github.com/ethz-asl/mav_control_rw
+
+The repository was required to be re-uploaded since the Georgia Tech Github is not connected to Github
+
+## DroneX Specific README Details
+In order to make changes to the optimal control calculations in the nonlinear mpc, follow these steps that are found in the directory:  mav_nonlinear_mpc/solver_made_from_cpp
+
+First, make sure ACADO toolkit is installed by going to there website.  Then add this line to your ~/.bashrc and source it:
+
+```
+source [pathtoAcado]/build/acado_env.sh
+```
+
+From the folder:  solver_made_from_cpp
+
+Edit the nmpc_solver_setup.cpp file with whatever changes are desired.  Then,
+
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+The executable files are created in the /solver folder.
+
+Execute the solver by:
+
+```
+cd ../../solver
+./nmpc_solver_setup
+```
+
+Then, build the entire workspace by:
+
+```
+cd ~/my_catkin_workspace
+catkin build
+```
+
+## DEFAULT README DETAILS
 
 Control strategies for rotary wing Micro Aerial Vehicles (MAVs) using ROS
 
