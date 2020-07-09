@@ -6,17 +6,8 @@ set(CMAKE_BUILD_TYPE Release)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/")
 
 # On os x we need to use openblas for the lapacke library
-find_package(OpenBLAS REQUIRED)
-if (Openblas_FOUND)
-  message("-- Found Openblas library: ${Openblas_LIBRARIES}")
-  message("-- Found Openblas include dirs: ${Openblas_INCLUDE_DIRS}")
-  include_directories(${Openblas_INCLUDE_DIRS})
-  set(lapacke_LIBRARIES ${Openblas_LIBRARIES})
-else (Openblas_FOUND)
-  message("-- Openblas not found, trying to use lapacke")
-  find_package(LAPACK REQUIRED)
-  set(lapacke_LIBRARIES lapacke)
-endif (Openblas_FOUND)
+find_package(LAPACK REQUIRED)
+set(lapacke_LIBRARIES lapacke)
 
 
 find_package(catkin_simple REQUIRED)
